@@ -1,0 +1,19 @@
+import turtle
+jack = turtle.Turtle()
+jack.color("yellow")
+jack.speed(0)
+def draw_square(length):
+        for side in range(4):
+            jack.forward(length)
+            jack.right(90)
+            
+jack.penup()
+jack.right(90)
+jack.forward(100)
+jack.left(90)
+jack.pendown()
+
+for square in range(80):
+    draw_square(50)
+    jack.forward(5)
+    jack.left(5)
